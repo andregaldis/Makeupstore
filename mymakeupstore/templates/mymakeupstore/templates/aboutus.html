@@ -1,0 +1,101 @@
+<!-- FILEPATH: /c:/Users/arega/OneDrive/Python/PYTHN/mymakeupstore/templates/mymakeupstore/templates/aboutus.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Acerca de Nosotros</title>
+  <style>
+    body {
+      background-color: lavender;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      text-align: center;
+      color: gray;
+      font-size: medium;
+    }
+    
+    .container img {
+      width: 200px;
+      height: 200px;
+    }
+    
+    .contact-form {
+      margin-top: 20px;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid gray;
+      border-radius: 5px;
+    }
+    
+    .contact-form input[type="submit"] {
+      background-color: fuchsia;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .rating {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+    
+    .rating input[type="radio"] {
+      display: none;
+    }
+    
+    .rating label {
+      color: fuchsia;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    
+    .rating label:before {
+      content: '\2605';
+    }
+    
+    .rating input[type="radio"]:checked ~ label:before {
+      color: fuchsia;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="foto.jpg" alt="Foto">
+    <p>Soy Andrea! y creé esta página con la finalidad de que todas las personas amantes del maquillaje puedan tener más acceso a él debido a ofertas continuas y puedan compartir sus reseñas. Esta página nace en noviembre de 2023.</p>
+    
+    <div class="contact-form">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Correo electrónico" required>
+        <textarea name="message" placeholder="Mensaje" required></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </div>
+    
+    <div class="rating">
+      <h2>Calificar experiencia</h2>
+      <input type="radio" name="rating" id="star5" value="5">
+      <label for="star5"></label>
+      <input type="radio" name="rating" id="star4" value="4">
+      <label for="star4"></label>
+      <input type="radio" name="rating" id="star3" value="3">
+      <label for="star3"></label>
+      <input type="radio" name="rating" id="star2" value="2">
+      <label for="star2"></label>
+      <input type="radio" name="rating" id="star1" value="1">
+      <label for="star1"></label>
+    </div>
+  </div>
+</body>
+</html>

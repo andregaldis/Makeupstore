@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Makeup Store</title>
+    <style>
+        /* Estilos de la barra de navegación */
+        .navbar {
+            background-color: lavender;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            font-family: Arial, sans-serif;
+            color: fuchsia;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        /* Estilos del banner */
+        .banner {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        /* Estilos del texto rotativo */
+        .rotating-text {
+            font-family: Arial, sans-serif;
+            color: gray;
+            text-align: center;
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { opacity: 0; }
+            20% { opacity: 1; }
+            80% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+
+        /* Estilos del espacio para iniciar sesión */
+        .login-container {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .login-link {
+            display: inline-block;
+            background-color: fuchsia;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .avatar-image {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/home">Inicio</a>
+        <a href="mymakeupstore\templates\aboutus.html">Acerca de nosotros</a>
+        <a href="mymakeupstore\templates\products.html">Productos</a>
+        <a href="mymakeupstore\templates\carts.html">Mi carrito</a>
+        <a href="mymakeupstore\templates\write-blog.html">Escribir mi blog</a>
+        <a href="/swap-product">Permutar producto</a>
+    </div>
+
+    <div class="banner">
+        <h2>BIENVENIDO A FIKAMAKEUP!</h2>
+        <p class="rotating-text">¡Hoy tenemos envío gratis!</p>
+    </div>
+  
+    <div class="login-container">
+        <a href="/login" class="login-link">Iniciar sesión</a>
+    </div>

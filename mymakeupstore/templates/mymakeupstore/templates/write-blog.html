@@ -1,0 +1,63 @@
+<!-- FILEPATH: /c:/Users/arega/OneDrive/Python/PYTHN/mymakeupstore/templates/mymakeupstore/templates/write-blog.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Write Blog</title>
+    <style>
+        body {
+            background-color: lavender; /* Set the background color to lavender */
+            font-family: Arial, sans-serif;
+        }
+        
+        #banner1 {
+            background-color: pink; /* Set the background color of the first banner to pink */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        #banner2 {
+            background-color: fuchsia; /* Set the background color of the second banner to fuchsia */
+            color: white; /* Set the text color of the second banner to white */
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        
+        #blogForm {
+            margin: 20px;
+        }
+        
+        #title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: Arial, sans-serif;
+        }
+        
+        #content {
+            height: 200px;
+            width: 100%;
+            resize: none;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="banner1">
+        <h1>Blog-fuencer</h1>
+    </div>
+    <div id="banner2">
+        <p>Escribe tus experiencias y agrega todas tus fotos de productos que hayas comprado con nosotros, empieza tu carrera en el mundo de la belleza ahora!.</p>
+    </div>
+    <form id="blogForm">
+        <label for="title">Título:</label><br>
+        <input type="text" id="title" name="title"><br><br>
+        <label for="content">Contenido:</label><br>
+        <textarea id="content" name="content"></textarea><br><br>
+        <input type="submit" value="Publicar">
+    </form>
+</body>
+</html>
